@@ -5,10 +5,12 @@ str(USArrests)
 x = lm(USArrests$Rape~USArrests$UrbanPop)
 
 plot(y=USArrests$Rape, x=USArrests$UrbanPop)
+scatter.smooth(y=USArrests$Rape,x=USArrests$UrbanPop)
+abline(density(USArrests$Rape))
+
 abline(a=coef(x)[1], b=coef(x)[2])
 
 map("state")
-
 
 
 
@@ -54,7 +56,73 @@ vector
 matrix
 data.frame
 list
-is./as.TYPE
-rep, seq, dim, head, tail, nrow, ncol, length, rownames, colnames, names, c, cbind, rbind, na.omit, read.table, read.csv, read.xlsx, readLines, readHTMLTable, sort, rank, order, factor, which, subset, merge, summary, table, sum, prop.table, apply, tapply, lapply, mapply, grep, grepl, regexpr, grepexpr, nchar, substring, tolower/toupper, sub, gsub, strslit, unlist, charmatch, paste, plot, points, lines, abline, par, legend, barplot, hist, stripchart, dotchart, pairs, coplot, barchart, histogram, qqmath, qq, densityplot, bwplot, stripplot, dotplot, xyplot, qplot, r/d/p/qIDENTIFIER, sample, quantile, if, else, for, while, function, shapiro.test, ks.test, t.test, wilcox.test, bartlett.test, lm, loess, map.
+is./as.TYPE*
+rep
+seq
+dim
+head
+tail
+nrow
+ncol
+length
+rownames
+colnames
+names
+c
+cbind
+rbind
+na.omit
+read.table
+read.csv
+read.xlsx
+readLines
+readHTMLTable
+sort
+rank
+order
+factor
+which
+subset
+merge
+summary
+table
+sum
+prop.table
+apply
+tapply
+lapply
+mapply
+grep
+grepl
+regexpr
+grepexpr
+nchar
+substring
+tolower/toupper
+sub
+gsub
+strslit
+unlist
+charmatch
+paste
+plot
+points
+lines
+abline
+par
+legend
+barplot
+hist
+stripchart
+dotchart
+pairs
+coplot
+barchart
+histogram
+qqmath, qq, densityplot, bwplot, stripplot, dotplot, xyplot, qplot, 
+r/d/p/qIDENTIFIER, sample, quantile, 
+if, else, for, while, function, 
+shapiro.test, ks.test, t.test, wilcox.test, bartlett.test, 
+lm, loess, map.
 
 
