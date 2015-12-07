@@ -73,3 +73,5 @@ plot(data$B0,data$B1, pch=19)
 
 data[(data$B0 > 0 & data$B1 <1),]
 
+
+
